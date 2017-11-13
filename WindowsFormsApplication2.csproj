@@ -1,0 +1,700 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{12C1BC14-0505-47EE-B096-74E3A0747D8E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Applictaion_Ozviat</RootNamespace>
+    <AssemblyName>Applictaion_Ozviat</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\exedb20\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>9445DAAFFD668B6D4C07A32F5D2A729DA949F272</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>WindowsFormsApplication2_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPersonal.designer.cs">
+      <DependentUpon>AddPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddUser_M.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUser_M.designer.cs">
+      <DependentUpon>AddUser_M.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddYaddasht.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddYaddasht.Designer.cs">
+      <DependentUpon>AddYaddasht.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Backup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Backup.Designer.cs">
+      <DependentUpon>Backup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bin\Debug\db\db20DataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db20DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Form_Email_View_Send_email.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Email_View_Send_email.Designer.cs">
+      <DependentUpon>Form_Email_View_Send_email.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InternetCS.cs" />
+    <Compile Include="Class_mft.cs" />
+    <Compile Include="clSMS.cs" />
+    <Compile Include="datetime.cs" />
+    <Compile Include="db20DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db20DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db20DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db20DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cldbSql.cs" />
+    <Compile Include="db20DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db20DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db20DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db20DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteStyleCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteStyleCard.Designer.cs">
+      <DependentUpon>DeleteStyleCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditParvande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditParvande.designer.cs">
+      <DependentUpon>EditParvande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditPersoal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPersoal.designer.cs">
+      <DependentUpon>EditPersoal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditYaddsht.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditYaddsht.Designer.cs">
+      <DependentUpon>EditYaddsht.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirstForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstForm.designer.cs">
+      <DependentUpon>FirstForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Email_send_Final.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Email_send_Final.Designer.cs">
+      <DependentUpon>Form_Email_send_Final.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Email_Send_MultiSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Email_Send_MultiSelect.Designer.cs">
+      <DependentUpon>Form_Email_Send_MultiSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Email_MultiSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Email_MultiSelect.Designer.cs">
+      <DependentUpon>Form_Email_MultiSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxFrmEx.cs" />
+    <Compile Include="MsgBox.cs" />
+    <Compile Include="Print_Yaddasht.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print_Yaddasht.Designer.cs">
+      <DependentUpon>Print_Yaddasht.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Report5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report5.Designer.cs">
+      <DependentUpon>Report5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report6.Designer.cs">
+      <DependentUpon>Report6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchYaddashtha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchYaddashtha.Designer.cs">
+      <DependentUpon>SearchYaddashtha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelcectCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelcectCard.Designer.cs">
+      <DependentUpon>SelcectCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report4.Designer.cs">
+      <DependentUpon>Report4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesignCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignCard.Designer.cs">
+      <DependentUpon>DesignCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SMS.designer.cs">
+      <DependentUpon>Form_SMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print_Cart_ozv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print_Cart_ozv.Designer.cs">
+      <DependentUpon>Print_Cart_ozv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report3.designer.cs">
+      <DependentUpon>Report3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Email_Send_Taki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Email_Send_Taki.Designer.cs">
+      <DependentUpon>Form_Email_Send_Taki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditUser.designer.cs">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MUserAccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MUserAccess.designer.cs">
+      <DependentUpon>MUserAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <EmbeddedResource Include="AddPersonal.resx">
+      <DependentUpon>AddPersonal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUser_M.resx">
+      <DependentUpon>AddUser_M.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddYaddasht.resx">
+      <DependentUpon>AddYaddasht.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Backup.resx">
+      <DependentUpon>Backup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\rpt\rpt1\Report_ParvandFanni_ListKol.rdlc" />
+    <EmbeddedResource Include="bin\Debug\rpt\rpt1\Report_MoshakhasatFardi_ListKol.rdlc" />
+    <EmbeddedResource Include="bin\Debug\rpt\rpt1\Report_ListKol.rdlc" />
+    <EmbeddedResource Include="bin\Debug\rpt\rpt1\Report_MoshakhasatFardi.rdlc" />
+    <EmbeddedResource Include="bin\Debug\rpt\rpt2\Report_ListKol.rdlc" />
+    <EmbeddedResource Include="bin\Debug\rpt\rpt2\Report_ShareEghamat.rdlc" />
+    <EmbeddedResource Include="bin\Debug\rpt\rpt2\Report_NovehOzviat.rdlc" />
+    <EmbeddedResource Include="bin\Debug\rpt\rpt2\Report_MizaneTahsilat.rdlc" />
+    <EmbeddedResource Include="bin\Debug\rpt\rpt2\Report_p_TarikhOzviat.rdlc" />
+    <EmbeddedResource Include="bin\Debug\rpt\rpt2\Report_NovehShoghl.rdlc" />
+    <EmbeddedResource Include="bin\Debug\rpt\rpt2\Report_p_Reshtetah.rdlc" />
+    <EmbeddedResource Include="bin\Debug\rpt\rpt2\Report_VazeiatTaholl.rdlc" />
+    <EmbeddedResource Include="bin\Debug\rpt\rpt2\Report_jensiat.rdlc" />
+    <EmbeddedResource Include="bin\Debug\rpt\rpt4\Report_Card_Sefareshi_kol.rdlc" />
+    <EmbeddedResource Include="bin\Debug\rpt\rpt5\Report_Ekhtryari_12Column.rdlc" />
+    <EmbeddedResource Include="bin\Debug\rpt\rpt5\Report_Ekhtryari_14Column.rdlc" />
+    <EmbeddedResource Include="bin\Debug\rpt\rpt5\Report_Ekhtryari_8Column.rdlc" />
+    <EmbeddedResource Include="bin\Debug\rpt\rpt6\Print_Yaddasht_Not_img.rdlc" />
+    <EmbeddedResource Include="bin\Debug\rpt\rpt6\2Print_Yaddasht_Not_img.rdlc" />
+    <EmbeddedResource Include="bin\Debug\rpt\rpt6\Print_Yaddasht_Yes_Img.rdlc" />
+    <EmbeddedResource Include="bin\Debug\rpt\rpt6\Report1.rdlc" />
+    <EmbeddedResource Include="bin\Debug\rpt\rpt6\Report2.rdlc" />
+    <EmbeddedResource Include="DeleteStyleCard.resx">
+      <DependentUpon>DeleteStyleCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditParvande.resx">
+      <DependentUpon>EditParvande.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPersoal.resx">
+      <DependentUpon>EditPersoal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditYaddsht.resx">
+      <DependentUpon>EditYaddsht.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstForm.resx">
+      <DependentUpon>FirstForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Email_MultiSelect.resx">
+      <DependentUpon>Form_Email_MultiSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Email_send_Final.resx">
+      <DependentUpon>Form_Email_send_Final.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Email_Send_MultiSelect.resx">
+      <DependentUpon>Form_Email_Send_MultiSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Email_View_Send_email.resx">
+      <DependentUpon>Form_Email_View_Send_email.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print_Yaddasht.resx">
+      <DependentUpon>Print_Yaddasht.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources2.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report5.resx">
+      <DependentUpon>Report5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report6.resx">
+      <DependentUpon>Report6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchYaddashtha.resx">
+      <DependentUpon>SearchYaddashtha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelcectCard.resx">
+      <DependentUpon>SelcectCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report4.resx">
+      <DependentUpon>Report4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignCard.resx">
+      <DependentUpon>DesignCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report3.resx">
+      <DependentUpon>Report3.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Email_Send_Taki.resx">
+      <DependentUpon>Form_Email_Send_Taki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SMS.resx">
+      <DependentUpon>Form_SMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditUser.resx">
+      <DependentUpon>EditUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MUserAccess.resx">
+      <DependentUpon>MUserAccess.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print_Cart_ozv.resx">
+      <DependentUpon>Print_Cart_ozv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report2.resx">
+      <DependentUpon>Report2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RestoreDB.resx">
+      <DependentUpon>RestoreDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt1_Moshakhasat_Fardi.resx">
+      <DependentUpon>rpt1_Moshakhasat_Fardi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt2_Parv_Fanni.resx">
+      <DependentUpon>rpt2_Parv_Fanni.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchParvandrFanni.resx">
+      <DependentUpon>SearchParvandrFanni.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchPersonal.resx">
+      <DependentUpon>SearchPersonal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tanzimat_email.resx">
+      <DependentUpon>Tanzimat_email.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UEditUser.resx">
+      <DependentUpon>UEditUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\rpt\rpt1\Report_ParvandFanni.rdlc" />
+    <EmbeddedResource Include="bin\Debug\rpt\rpt3\Report_Card_style1_NarengiKeremi.rdlc" />
+    <EmbeddedResource Include="bin\Debug\rpt\rpt3\Report_Card_style1_NarengiKeremi_ba_logo.rdlc" />
+    <EmbeddedResource Include="bin\Debug\rpt\rpt3\Report_Card_style2_ba_sadeh_logo.rdlc" />
+    <EmbeddedResource Include="bin\Debug\rpt\rpt3\Report_Card_style2_sadeh.rdlc" />
+    <EmbeddedResource Include="bin\Debug\rpt\rpt3\Report_Card_style3_AbiGol.rdlc" />
+    <EmbeddedResource Include="bin\Debug\rpt\rpt3\Report_Card_style3_AbiGol_ba_logo.rdlc" />
+    <EmbeddedResource Include="bin\Debug\rpt\rpt4\Fix_Report_Card.rdlc" />
+    <EmbeddedResource Include="bin\Debug\rpt\rpt4\Report_Card_Sefareshi.rdlc" />
+    <EmbeddedResource Include="bin\Debug\rpt\rpt2\Report_BakhshOzviat.rdlc" />
+    <None Include="app.config" />
+    <None Include="bin\Debug\db\db20DataSet4.xsc">
+      <DependentUpon>db20DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="bin\Debug\db\db20DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db20DataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\db\db20DataSet4.xss">
+      <DependentUpon>db20DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="db20DataSet.xsc">
+      <DependentUpon>db20DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db20DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db20DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db20DataSet.xss">
+      <DependentUpon>db20DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db20DataSet1.xsc">
+      <DependentUpon>db20DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="db20DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db20DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db20DataSet1.xss">
+      <DependentUpon>db20DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="db20DataSet2.xsc">
+      <DependentUpon>db20DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="db20DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db20DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db20DataSet2.xss">
+      <DependentUpon>db20DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="db20DataSet3.xsc">
+      <DependentUpon>db20DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="db20DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db20DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db20DataSet3.xss">
+      <DependentUpon>db20DataSet3.xsd</DependentUpon>
+    </None>
+    <Compile Include="Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report2.Designer.cs">
+      <DependentUpon>Report2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RestoreDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RestoreDB.Designer.cs">
+      <DependentUpon>RestoreDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rpt1_Moshakhasat_Fardi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rpt1_Moshakhasat_Fardi.Designer.cs">
+      <DependentUpon>rpt1_Moshakhasat_Fardi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rpt2_Parv_Fanni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rpt2_Parv_Fanni.designer.cs">
+      <DependentUpon>rpt2_Parv_Fanni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchParvandrFanni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchParvandrFanni.designer.cs">
+      <DependentUpon>SearchParvandrFanni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchPersonal.designer.cs">
+      <DependentUpon>SearchPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tanzimat_email.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tanzimat_email.Designer.cs">
+      <DependentUpon>Tanzimat_email.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransparentLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UEditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UEditUser.designer.cs">
+      <DependentUpon>UEditUser.cs</DependentUpon>
+    </Compile>
+    <None Include="WindowsFormsApplication2_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\54.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.9.2">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2005 Express Edition SP2 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\menu_bk2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\menu_bk4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\menu_bk202.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\bgmain4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\img\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\1000000-3.jpg" />
+    <None Include="bin\Debug\img\BedoneAks.jpg" />
+    <None Include="bin\Debug\img\abi20.jpg" />
+    <Content Include="bin\Debug\db\db20.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\db\db20_log.ldf">
+      <DependentUpon>db20.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\img\NotPicture.gif" />
+    <None Include="bin\Debug\img\RovshanKeremi.jpg" />
+    <None Include="bin\Debug\img\SadehSabz.jpg" />
+    <None Include="bin\Debug\img\Untitleاااااd-1.jpg" />
+    <None Include="bin\Debug\img\true.png" />
+    <None Include="bin\Debug\img\True.jpg" />
+    <Content Include="bin\Debug\img\Req.png" />
+    <Content Include="HANDSHAK.ICO" />
+    <None Include="Resources\SO00942_.WMF" />
+    <None Include="Resources\Unjjtitled-1_Layer-1.gif" />
+    <None Include="Resources\Untitled-1.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
