@@ -20,3 +20,15 @@ The most important features of this software:
 -Set up and manage for access (admin and guest user)
 
 Notice: Please Check "RegisterManagment.pdf"
+
+![alt text](https://raw.githubusercontent.com/JeloH/RegisterManagment/master/1.png)
+
+![alt text](https://raw.githubusercontent.com/JeloH/RegisterManagment/master/2.png)
+
+![alt text](https://raw.githubusercontent.com/JeloH/RegisterManagment/master/3.png)
+
+![alt text](https://raw.githubusercontent.com/JeloH/RegisterManagment/master/4.png)
+
+![alt text](https://raw.githubusercontent.com/JeloH/RegisterManagment/master/5.png)
+
+![alt text](https://raw.githubusercontent.com/JeloH/RegisterManagment/master/6.png)
