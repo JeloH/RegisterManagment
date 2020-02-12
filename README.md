@@ -1,6 +1,6 @@
 # RegisterManagment
 Title:
-Implementing a registering software for Educational institutions
+Implementing a registration system for Educational institutions
 
 This application was developed to manage information from members of educational institutions (we considered Iranian institutions for this project).
 
